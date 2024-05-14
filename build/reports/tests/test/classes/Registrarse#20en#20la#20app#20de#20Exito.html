@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Registrarse en la app de Exito</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Registrarse en la app de Exito</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Registrarse en la app de Exito</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">50.174s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Digitar las credenciales del usuario"></a>
+<h3 class="failures">Digitar las credenciales del usuario</h3>
+<span class="code">
+<pre>net.sf.cglib.core.CodeGenerationException: java.lang.NullPointerException--&gt;null
+	at app//net.sf.cglib.core.ReflectUtils.newInstance(ReflectUtils.java:298)
+	at app//net.sf.cglib.proxy.Enhancer$EnhancerFactoryData.newInstance(Enhancer.java:448)
+	at app//net.sf.cglib.proxy.Enhancer.nextInstance(Enhancer.java:700)
+	at app//net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:298)
+	at app//net.sf.cglib.proxy.Enhancer.createHelper(Enhancer.java:480)
+	at app//net.sf.cglib.proxy.Enhancer.create(Enhancer.java:324)
+	at app//net.thucydides.core.steps.StepFactory.immutableStepLibrary(StepFactory.java:212)
+	at app//net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:203)
+	at app//net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:179)
+	at app//net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:115)
+	at app//net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at app//net.serenitybdd.screenplay.actions.SendKeys.into(SendKeys.java:28)
+	at app//app.exito.tasks.RegistroTask.performAs(RegistroTask.java:80)
+	at app//app.exito.tasks.RegistroTask$$EnhancerByCGLIB$$2538b9ba.CGLIB$performAs$0(&lt;generated&gt;)
+	at app//app.exito.tasks.RegistroTask$$EnhancerByCGLIB$$2538b9ba$$FastClassByCGLIB$$935a0f02.invoke(&lt;generated&gt;)
+	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at app//app.exito.tasks.RegistroTask$$EnhancerByCGLIB$$2538b9ba.performAs(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at app//app.exito.stepDefinitions.RegistroStepDefinition.elUsuarioSeRegistraEnLaAppDelExito(RegistroStepDefinition.java:35)
+	at ✽.el usuario se registra en la app del exito(src/test/resources/app.exito.features/registro.feature:6)
+Caused by: java.lang.NullPointerException
+	at net.serenitybdd.screenplay.actions.type.RenderEnteredText.lambda$getTextAsStringFor$0(RenderEnteredText.java:40)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at net.serenitybdd.screenplay.actions.type.RenderEnteredText.getTextAsStringFor(RenderEnteredText.java:41)
+	at net.serenitybdd.screenplay.actions.EnterValue.&lt;init&gt;(EnterValue.java:22)
+	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget.&lt;init&gt;(SendKeysIntoTarget.java:12)
+	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$$EnhancerByCGLIB$$97e0bc92.&lt;init&gt;(&lt;generated&gt;)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at net.sf.cglib.core.ReflectUtils.newInstance(ReflectUtils.java:291)
+	at net.sf.cglib.proxy.Enhancer$EnhancerFactoryData.newInstance(Enhancer.java:448)
+	at net.sf.cglib.proxy.Enhancer.nextInstance(Enhancer.java:700)
+	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:298)
+	at net.sf.cglib.proxy.Enhancer.createHelper(Enhancer.java:480)
+	at net.sf.cglib.proxy.Enhancer.create(Enhancer.java:324)
+	at net.thucydides.core.steps.StepFactory.immutableStepLibrary(StepFactory.java:212)
+	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:203)
+	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:179)
+	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:115)
+	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at net.serenitybdd.screenplay.actions.SendKeys.into(SendKeys.java:28)
+	at app.exito.tasks.RegistroTask.performAs(RegistroTask.java:80)
+	at app.exito.tasks.RegistroTask$$EnhancerByCGLIB$$2538b9ba.CGLIB$performAs$0(&lt;generated&gt;)
+	at app.exito.tasks.RegistroTask$$EnhancerByCGLIB$$2538b9ba$$FastClassByCGLIB$$935a0f02.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at app.exito.tasks.RegistroTask$$EnhancerByCGLIB$$2538b9ba.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at app.exito.stepDefinitions.RegistroStepDefinition.elUsuarioSeRegistraEnLaAppDelExito(RegistroStepDefinition.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:108)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Digitar las credenciales del usuario</td>
+<td class="failures">50.174s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>may. 13, 2024 7:45:39 P. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Digitar las credenciales del usuario
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Actor registro task
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - java.lang.NullPointerException--&gt;null
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.0</a> at 13 may. 2024 19:46:23</p>
+</div>
+</div>
+</body>
+</html>

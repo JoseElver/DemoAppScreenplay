@@ -41,12 +41,12 @@ public class RegistroTask implements Task {
                     Enter.keyValues(APELLIDOS).into(INP_APELLIDO),
                     Click.on(INP_NUMERO_DOCUMENTO),
                     Enter.theValue(NUMERO_DOCUMENTO).into(INP_NUMERO_DOCUMENTO),
-                    Click.on(INP_ANIO),
+                  /* Click.on(INP_ANIO),
                     Click.on(SELECT_ANIO),
                     Click.on(INP_MES),
                     Click.on(SELECT_MES),
                     Click.on(INP_DIA),
-                    Click.on(SELECT_DIA),
+                    Click.on(SELECT_DIA),*/
                     Click.on(INP_CELULAR),
                     Enter.theValue(CELULAR).into(INP_CELULAR),
                     Click.on(LBL_FECHA_NACIMIENTO),
@@ -57,12 +57,12 @@ public class RegistroTask implements Task {
 
             TouchAction check = new TouchAction(AppiumAndroidDriver.driver);
 
-            int x = 90;
-            int y = 1650;
+            int x = 110;
+            int y = 1630;
             check.tap(PointOption.point(x, y)).perform();
 
-            x = 90;
-            y = 1767;
+            x = 110;
+            y = 1720;
             check.tap(PointOption.point(x, y)).perform();
 
             actor.attemptsTo(
